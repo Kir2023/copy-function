@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frame Data Visualizer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <div class="controls">
+      <label>
+        Frame Width:
+        <input
+          type="number"
+          id="frameWidth"
+          min="1"
+          title="Please enter the array width"
+        />
+      </label>
+      <label>
+        Frame Height:
+        <input
+          type="number"
+          id="frameHeight"
+          min="1"
+          title="Please enter the array height"
+        />
+      </label>
+      <label>
+        Pic Width:
+        <input
+          type="number"
+          id="picWidth"
+          min="1"
+          title="Please enter the width of the useful data array"
+        />
+      </label>
+      <label>
+        Pic Height:
+        <input
+          type="number"
+          id="picHeight"
+          min="1"
+          title="Please enter the height of the useful data array"
+        />
+      </label>
+      <label>
+        Pic X:
+        <input
+          type="number"
+          id="picX"
+          min="0"
+          title="Please enter the distance from the left edge of the array"
+        />
+      </label>
+      <label>
+        Pic Y:
+        <input
+          type="number"
+          id="picY"
+          min="0"
+          title="Please enter the distance from the top edge of the array"
+        />
+      </label>
+      <button id="generate">Generate and Move</button>
+      <button id="reset" style="display: none">Reset</button>
+    </div>
+
+    <div class="grids">
+      <div>
+        <h3>Before</h3>
+        <div id="before" class="grid"></div>
+      </div>
+      <div>
+        <h3>After</h3>
+        <div id="after" class="grid"></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
